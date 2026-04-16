@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+char *DAT_08048636[4];
+
+int	main(void)
+{
+	int	local_14;
+
+	puts("***********************************");
+	puts("* \t  -Level00 -\t\t  *");
+	puts("***********************************");
+	printf("Password:");
+	scanf("%d", &local_14);
+	if (local_14 != 5276)
+		puts("\nInvalid Password!");
+	else
+	{
+		puts("\nAuthenticated!");
+		system("/bin/sh");
+	}
+	return (local_14 != 5276);
+}
